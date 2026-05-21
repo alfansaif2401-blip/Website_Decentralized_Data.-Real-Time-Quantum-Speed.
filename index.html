@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuantumSphere Portal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ============================
+       PARTICLE CANVAS BACKGROUND
+       ============================ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ============================
+       HEADER
+       ============================ -->
+  <header id="mainHeader">
+    <div class="header-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <span class="logo-ring"></span>
+          <span class="logo-core">Q</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">QuantumSphere</span>
+          <span class="logo-subtitle">NEURAL PORTAL v2.4.0</span>
+        </div>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- ============================
+           NAV
+           ============================ -->
+      <nav id="mainNav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home"    class="nav-link active" data-section="home">Home</a></li>
+          <li><a href="#about"   class="nav-link"        data-section="about">About</a></li>
+          <li><a href="#projects"class="nav-link"        data-section="projects">Projects</a></li>
+          <li><a href="#skills"  class="nav-link"        data-section="skills">Skills</a></li>
+          <li><a href="#contact" class="nav-link"        data-section="contact">Contact</a></li>
+        </ul>
+        <div class="nav-indicator"></div>
+      </nav>
+
+      <div class="header-status">
+        <span class="status-dot"></span>
+        <span class="status-text">ONLINE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================
+       MAIN CONTENT WRAPPER
+       ============================ -->
+  <div class="page-wrapper">
+
+    <!-- ============================
+         MAIN
+         ============================ -->
+    <main id="home">
+
+      <!-- ── HERO SECTION ─────────────────────────────────── -->
+      <section class="hero-section glass-card" id="heroSection">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> SYSTEM ACTIVE — NODE #4729
+        </div>
+        <h1 class="hero-title">
+          <span class="title-line-1">Moh Alfan</span>
+          <span class="title-line-2">Syaifullah</span>
+        </h1>
+        <p class="hero-subtitle">Front-End Developer &amp; Digital Architect</p>
+        <p class="hero-desc">
+          Membangun antarmuka digital yang futuristik, responsif, dan berorientasi pada pengalaman pengguna terbaik.
+          Beroperasi di persimpangan antara seni desain dan logika rekayasa.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" id="btnExplore">
+            <span class="btn-icon">◈</span> Explore Portal
+          </button>
+          <button class="btn-secondary" id="btnContact">
+            <span class="btn-icon">⟡</span> Ping Me
+          </button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="24">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="98">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Integrity</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="3">0</span>
+            <span class="stat-label">Core Values</span>
+          </div>
+        </div>
+        <div class="scan-line"></div>
+      </section>
+
+      <!-- ── ARTICLE 1 : ABOUT ─────────────────────────────── -->
+      <section id="about">
+        <article class="glass-card article-card" id="articleAbout">
+          <div class="article-header">
+            <div class="article-tag">◈ NODE-01 / IDENTITY MATRIX</div>
+            <h2 class="article-title">Tentang Saya</h2>
+          </div>
+          <div class="article-body">
+            <p>
+              Halo! Saya <strong>Moh Alfan Syaifullah</strong>, seorang Front-End Developer yang bersemangat dalam
+              menciptakan pengalaman digital yang indah dan fungsional. Saat ini sedang menempuh kursus
+              <em>"Belajar Dasar Pemrograman Web"</em> di <strong>Dicoding Indonesia</strong>.
+            </p>
+            <p>
+              Saya percaya bahwa kode yang baik bukan hanya soal fungsi, tetapi juga soal estetika, keterbacaan,
+              dan dampak nyata bagi pengguna. Setiap baris kode adalah kesempatan untuk membuat dunia digital
+              menjadi sedikit lebih baik.
+            </p>
+            <div class="values-grid">
+              <div class="value-card" data-value="integrity">
+                <span class="value-icon">⬡</span>
+                <span class="value-name">Integrity</span>
+                <span class="value-desc">Jujur dalam setiap proses</span>
+              </div>
+              <div class="value-card" data-value="accountability">
+                <span class="value-icon">⬡</span>
+                <span class="value-name">Accountability</span>
+                <span class="value-desc">Bertanggung jawab atas hasil</span>
+              </div>
+              <div class="value-card" data-value="transparency">
+                <span class="value-icon">⬡</span>
+                <span class="value-name">Transparency</span>
+                <span class="value-desc">Terbuka dan komunikatif</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ── ARTICLE 2 : PROJECTS ──────────────────────────── -->
+      <section id="projects">
+        <article class="glass-card article-card" id="articleProjects">
+          <div class="article-header">
+            <div class="article-tag">◈ NODE-02 / PROJECT MANIFEST</div>
+            <h2 class="article-title">Proyek Unggulan</h2>
+          </div>
+          <div class="projects-grid">
+
+            <div class="project-card" id="proj1">
+              <div class="project-header">
+                <span class="project-icon">◈</span>
+                <span class="project-status running">● LIVE</span>
+              </div>
+              <h3 class="project-name">QuantumSphere Portal</h3>
+              <p class="project-desc">Portal web futuristik dengan dark glassmorphism design system dan interaktivitas DOM tingkat lanjut.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-metrics">
+                <span>Perf: <strong>98</strong></span>
+                <span>A11y: <strong>95</strong></span>
+              </div>
+            </div>
+
+            <div class="project-card" id="proj2">
+              <div class="project-header">
+                <span class="project-icon">◈</span>
+                <span class="project-status building">◎ BUILD</span>
+              </div>
+              <h3 class="project-name">NeuralNote App</h3>
+              <p class="project-desc">Aplikasi catatan pintar dengan UI minimalis dan fitur organisasi berbasis tag warna.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS Grid</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <div class="project-metrics">
+                <span>Perf: <strong>92</strong></span>
+                <span>A11y: <strong>97</strong></span>
+              </div>
+            </div>
+
+            <div class="project-card" id="proj3">
+              <div class="project-header">
+                <span class="project-icon">◈</span>
+                <span class="project-status planned">○ PLAN</span>
+              </div>
+              <h3 class="project-name">EcoTrack Dashboard</h3>
+              <p class="project-desc">Dashboard monitoring lingkungan dengan visualisasi data real-time dan sistem alert otomatis.</p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Canvas API</span>
+              </div>
+              <div class="project-metrics">
+                <span>Perf: <strong>—</strong></span>
+                <span>A11y: <strong>—</strong></span>
+              </div>
+            </div>
+
+            <div class="project-card" id="proj4">
+              <div class="project-header">
+                <span class="project-icon">◈</span>
+                <span class="project-status running">● LIVE</span>
+              </div>
+              <h3 class="project-name">Horizon Landing</h3>
+              <p class="project-desc">Landing page responsif dengan animasi scroll reveal dan desain premium untuk klien startup.</p>
+              <div class="project-tags">
+                <span class="tag">Semantic HTML</span>
+                <span class="tag">Flexbox</span>
+                <span class="tag">Vanilla JS</span>
+              </div>
+              <div class="project-metrics">
+                <span>Perf: <strong>96</strong></span>
+                <span>A11y: <strong>100</strong></span>
+              </div>
+            </div>
+
+          </div>
+        </article>
+      </section>
+
+      <!-- ── ARTICLE 3 : SKILLS ─────────────────────────────── -->
+      <section id="skills">
+        <article class="glass-card article-card" id="articleSkills">
+          <div class="article-header">
+            <div class="article-tag">◈ NODE-03 / SKILL MATRIX</div>
+            <h2 class="article-title">Keahlian Teknis</h2>
+          </div>
+          <div class="skills-container">
+            <div class="skill-row">
+              <span class="skill-name">HTML5 Semantic</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="95" style="width:0%"></div>
+              </div>
+              <span class="skill-pct">95%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">CSS3 & Animations</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="90" style="width:0%"></div>
+              </div>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">JavaScript DOM</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="85" style="width:0%"></div>
+              </div>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Responsive Design</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="92" style="width:0%"></div>
+              </div>
+              <span class="skill-pct">92%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">UI/UX Design</span>
+              <div class="skill-bar-bg">
+                <div class="skill-bar" data-width="80" style="width:0%"></div>
+              </div>
+              <span class="skill-pct">80%</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- ── CONTACT SECTION ───────────────────────────────── -->
+      <section id="contact">
+        <div class="glass-card contact-card" id="contactSection">
+          <div class="article-tag">◈ NODE-04 / COMMUNICATION HUB</div>
+          <h2 class="article-title">Hubungi Saya</h2>
+          <p class="contact-desc">Punya proyek menarik atau pertanyaan? Kirim sinyal ke sistem saya!</p>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">alfan@quantumsphere.dev</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">⟡</span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">linkedin.com/in/mohalfan</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">◈</span>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-value">github.com/alfansyf</span>
+            </div>
+          </div>
+          <!-- INTERACTIVE TERMINAL -->
+          <div class="terminal-box" id="terminalBox">
+            <div class="terminal-header">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">quantumsphere@terminal:~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <p class="t-line">
+                <span class="t-prompt">$</span>
+                <span class="t-cmd"> system.initialize()</span>
+              </p>
+              <p class="t-line response">→ QuantumSphere Portal aktif. Selamat datang!</p>
+            </div>
+            <div class="terminal-input-row">
+              <span class="t-prompt">$</span>
+              <input type="text" id="terminalInput" class="terminal-input"
+                     placeholder="ketik perintah... (coba: help)" autocomplete="off" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main><!-- /main -->
+
+    <!-- ============================
+         ASIDE (SIDEBAR PROFILE)
+         ============================ -->
+    <aside id="developerSidebar" aria-label="Developer Profile">
+
+      <!-- Profile Card -->
+      <div class="glass-card sidebar-card profile-card">
+        <div class="profile-avatar-wrap">
+          <div class="profile-avatar">
+            <span class="avatar-initials">MA</span>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="profile-badge">DEV</div>
+        </div>
+        <h2 class="profile-name">Moh Alfan Syaifullah</h2>
+        <p class="profile-role">Front-End Developer</p>
+        <div class="profile-separator"></div>
+        <div class="profile-values">
+          <div class="profile-value-item">
+            <span class="pv-icon">⬡</span>
+            <span class="pv-text">Integrity</span>
+          </div>
+          <div class="profile-value-item">
+            <span class="pv-icon">⬡</span>
+            <span class="pv-text">Accountability</span>
+          </div>
+          <div class="profile-value-item">
+            <span class="pv-icon">⬡</span>
+            <span class="pv-text">Transparency</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- System Monitor -->
+      <div class="glass-card sidebar-card system-card">
+        <div class="sidebar-section-title">⟡ System Monitor</div>
+        <div class="monitor-row">
+          <span class="monitor-label">CPU Load</span>
+          <div class="monitor-bar-bg">
+            <div class="monitor-bar" id="cpuBar" style="width: 0%"></div>
+          </div>
+          <span class="monitor-val" id="cpuVal">—</span>
+        </div>
+        <div class="monitor-row">
+          <span class="monitor-label">Memory</span>
+          <div class="monitor-bar-bg">
+            <div class="monitor-bar mem" id="memBar" style="width: 0%"></div>
+          </div>
+          <span class="monitor-val" id="memVal">—</span>
+        </div>
+        <div class="monitor-row">
+          <span class="monitor-label">Uptime</span>
+          <div class="monitor-bar-bg">
+            <div class="monitor-bar up" id="upBar" style="width: 0%"></div>
+          </div>
+          <span class="monitor-val" id="upVal">—</span>
+        </div>
+        <div class="live-clock" id="liveClock">00:00:00</div>
+      </div>
+
+      <!-- Node Counter -->
+      <div class="glass-card sidebar-card counter-card">
+        <div class="sidebar-section-title">◈ Node Activity</div>
+        <div class="counter-display">
+          <span class="counter-num" id="nodeCounter">0</span>
+          <span class="counter-unit">interactions</span>
+        </div>
+        <button class="btn-counter" id="btnPingNode">
+          ⟡ Ping System Node
+        </button>
+        <div class="counter-log" id="counterLog">
+          <p class="log-entry init">System initialized. Waiting for input...</p>
+        </div>
+      </div>
+
+      <!-- Tech Stack -->
+      <div class="glass-card sidebar-card tech-card">
+        <div class="sidebar-section-title">◈ Tech Stack</div>
+        <div class="tech-list">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">DOM API</span>
+          <span class="tech-badge">CSS Grid</span>
+          <span class="tech-badge">Flexbox</span>
+          <span class="tech-badge">Canvas API</span>
+          <span class="tech-badge">Animations</span>
+        </div>
+      </div>
+
+    </aside><!-- /aside -->
+
+  </div><!-- /page-wrapper -->
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer id="mainFooter">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">Q</span>
+        <div>
+          <p class="footer-name">QuantumSphere Portal</p>
+          <p class="footer-copy">&copy; 2025 Moh Alfan Syaifullah. All rights reserved.</p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p>Dibuat dengan ♡ untuk <strong>Dicoding</strong> — Belajar Dasar Pemrograman Web</p>
+        <p class="footer-tech">Pure HTML5 · Pure CSS3 · Pure JavaScript</p>
+      </div>
+      <div class="footer-status">
+        <span class="status-dot pulse"></span>
+        <span>All systems operational</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- MODAL OVERLAY -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <div class="modal-icon">⟡</div>
+      <h3 class="modal-title" id="modalTitle">System Alert</h3>
+      <p class="modal-msg" id="modalMsg"></p>
+      <button class="btn-primary" id="modalConfirm">Confirm</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
